@@ -252,6 +252,7 @@ odm/lib64/libEIS.so
 odm/lib64/libFDClite.so
 odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libHIS.so
+odm/lib64/libImageWarpMask.so
 odm/lib64/libODNN.so
 odm/lib64/libOGLManager.so
 odm/lib64/libOplusPDCore.so
