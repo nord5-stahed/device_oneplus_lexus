@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += $(foreach f,$(REGIONAL_PROP_FILES), \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 35
 
+# SELinux Treble Labeling (OnePlus camera)
+PRODUCT_SELINUX_TREBLE_LABELING_TRACKING_LIST_FILE := \
+    $(LOCAL_PATH)/tracking_list.yaml
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
