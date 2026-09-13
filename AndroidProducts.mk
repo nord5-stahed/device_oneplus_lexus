@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_lexus.mk
+    $(LOCAL_DIR)/lineage_lexus.mk
