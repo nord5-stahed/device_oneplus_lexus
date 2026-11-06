@@ -49,6 +49,24 @@
          brightness value and will repeat for the following ramp if autobrightness is enabled. -->
     <bool name="config_skipScreenOnBrightnessRamp">true</bool>
 
+    <!-- When the screen is turned on, the previous estimate of the ambient light level at the time
+         the screen was turned off is restored and is used to determine the initial screen
+         brightness.
+
+         If this flag is true, then the ambient light level estimate will be promptly recomputed
+         after the warm-up interface and the screen brightness will be adjusted immediately.
+
+         If this flag is false, then the ambient light level estimate will be adjusted more
+         gradually in the same manner that normally happens when the screen is on according to the
+         brightening or dimming debounce thresholds.  As a result, it may take somewhat longer to
+         adapt to the environment.  This mode may be better suited for watches. -->
+    <bool name="config_autoBrightnessResetAmbientLuxAfterWarmUp">false</bool>
+
+    <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
+         For this time after the screen turns on, the Power Manager
+         will not debounce light sensor readings -->
+    <integer name="config_lightSensorWarmupTime">200</integer>
+
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
          when adapting to brighter or darker environments.  This parameter controls how quickly
